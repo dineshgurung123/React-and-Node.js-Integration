@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Cards(props) {
     
-    
-
     return(
+ <Link to ={`/product/${props.product._id}`}>
 
+
+  
 <div className="flex px-3 py-3">
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img className="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains"/>
@@ -19,6 +22,7 @@ function Cards(props) {
         </div>
     </div>
 </div>
+</Link>
     )
 }
 
